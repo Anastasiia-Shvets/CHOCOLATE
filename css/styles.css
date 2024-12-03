@@ -1,0 +1,166 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    color: #111111;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    outline: 1px solid red;
+    width: 1166px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.header {
+    padding: 20px 32px;
+}
+
+.header-container {}
+
+.header-nav {}
+
+.header-logo {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+}
+
+.header-logo-span {
+    font-style: italic;
+}
+
+.header-list-menu {}
+
+.header-item-menu {}
+
+.header-link-menu {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.header-list-soc {}
+
+.header-item-soc {}
+
+.header-link-soc {}
+
+.header-img-soc {}
+
+/* ========================HERO========================= */
+
+.hero {
+    padding-bottom: 80px;
+}
+
+.hero-container {
+    background-color: rgba(17, 17, 17, 0.6);
+    background-image: url(../images/desctop-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    padding: 381px 40px 40px 40px;
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    min-width: 484px;
+    padding-bottom: 32px;
+    color: #FFFFFF;
+}
+
+.hero-btn {
+    background-color: #FD9222;
+    color: #FFFFFF;
+    border-radius: 30px;
+    border: 1px solid #FD9222;
+    padding: 14px 40px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #FCF1E0;
+    border: 1px solid #FCF1E0;
+    color: #FD9222;
+}
+
+.hero-link-btn {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 14px 40px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-link-btn:hover,
+.hero-link-btn:focus {
+    color: #FD9222;
+    border-color: #FD9222;
+}
+
+.hero-link-scrol {
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+}
+
+.hero-link-scrol:hover,
+.hero-link-scrol:focus {
+    color: #FD9222;
+}
