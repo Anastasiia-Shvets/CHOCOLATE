@@ -608,9 +608,7 @@ address {
 }
 
 .foter-addres-list {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    margin-bottom: 4px;
 }
 
 .foter-addres-item {}
