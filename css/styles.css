@@ -251,7 +251,6 @@ address {
 .features-subtitle {
     color: #FFFFFF;
     font-size: 18px;
-    font-weight: 600;
     line-height: 1.33;
     letter-spacing: normal;
     margin-bottom: 18px;
@@ -259,7 +258,6 @@ address {
 
 .teatures-text {
     color: #FFFFFF;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: -0.02em;
@@ -312,7 +310,6 @@ address {
 }
 
 .taste-subtitle {
-    font-weight: 600;
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: -0.02em;
@@ -346,7 +343,6 @@ address {
 
 .made-sub-title {
     color: #111111;
-    font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: normal;
@@ -405,7 +401,6 @@ address {
 
 .products-subtitle {
     color: #111111;
-    font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.02em;
@@ -466,7 +461,6 @@ address {
     padding: 28px 64px;
     background-color: #FFFFFF;
     color: #111111;
-    font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.02em;
@@ -515,7 +509,6 @@ address {
 
 .loved-subtitle {
     margin-bottom: 24px;
-    font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: normal;
@@ -539,7 +532,6 @@ address {
     color: #111111;
     font-family: inherit;
     font-size: 18psx;
-    font-weight: 600;
     line-height: normal;
     padding: 14px 40px;
     border: 1px solid #FD9222;
@@ -557,26 +549,43 @@ address {
 
 /* ===================================FOOTER=========================================== */
 
-.footer {}
-
-.footer-container {
+.footer {
     padding: 50px 32px 86px 32px;
-    background-color: #1E1823;
+        background-color: #1E1823;
 }
+
+.footer-container {}
 
 .footer-title {
     color: #FFFFFF;
+    text-align: start;
+    min-width: 300px;
+    margin-right: auto;
 }
 
-.title {}
+.footer-content {
+    display: flex;
+    padding-bottom: 50px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
 
-.span-title {}
+.footer-soc-div {
+    margin-right: 50px;
+}
 
 .footer-text {
     color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: normal;
+    margin-bottom: 14px;
 }
 
-.footer-soc-list {}
+.footer-soc-list {
+    display: flex;
+    gap: 14px;
+}
 
 .footer-soc-item {}
 
@@ -586,26 +595,46 @@ address {
 
 .footer-soc-img {}
 
+.footer-addres-div {}
+
 .foter-addres {}
 
 .footer-text-addres {
     color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: normal;
+    margin-bottom: 14px;
 }
 
-.foter-addres-list {}
+.foter-addres-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
 .foter-addres-item {}
 
 .foter-addres-link {
     color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+
 }
 
 .footer-nav {}
 
-.footer-nav-list {}
+.footer-nav-list {
+    display: flex;
+    gap: 24px;
+}
 
 .footer-nav-item {}
 
 .footer-nav-linl {
     color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
 }
