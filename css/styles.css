@@ -118,12 +118,18 @@ address {
 .header-item-menu {}
 
 .header-link-menu {
+    color: #111111;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.02em;
     padding-top: 12px;
     padding-bottom: 12px;
+    transition: color 250ms ease;
+}
+
+.header-link-menu:hover {
+    color: #FD9222;
 }
 
 .header-list-soc {
@@ -145,12 +151,13 @@ address {
     border: 1px solid rgba(17, 17, 17, 0.10);
     border-radius: 10px;
     color: #111111;
+    transition: color 250ms ease, border-color 250ms ease;
 }
 
 .header-link-soc:hover,
 .header-link-soc:focus {
     border-color: rgba(253, 146, 34, 0.1);
-    color:#FD9222;
+    color: #FD9222;
 }
 
 .header-icon-soc {
@@ -166,9 +173,8 @@ address {
 
 .hero-container {
     background-color: rgba(17, 17, 17, 0.6);
-    background-image: linear-gradient(
-        rgba(17, 17, 17, 0.4), 
-        rgba(17, 17, 17, 0.4)), 
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+            rgba(17, 17, 17, 0.4)),
         url(../images/desctop-1.jpg);
     background-position: center;
     background-size: cover;
@@ -203,6 +209,7 @@ address {
     font-size: 14px;
     font-weight: 600;
     margin-right: 14px;
+    transition: color 500ms linear, background-color 500ms linear, border 500ms linear;
 }
 
 .hero-btn:hover,
@@ -220,6 +227,7 @@ address {
     font-family: inherit;
     font-size: 14px;
     font-weight: 600;
+    transition: color 500ms ease, border-color 500ms ease;
 }
 
 .hero-link-btn:hover,
@@ -239,6 +247,7 @@ address {
     display: flex;
     gap: 14px;
     align-items: center;
+    transition: color 500ms ease;
 }
 
 .hero-link-scrol::after {
@@ -341,8 +350,10 @@ address {
 }
 
 .taste-item {
+    position: relative;
     border-radius: 15px;
     padding: 28px 23px;
+
     width: calc((100% - 96px) / 4);
 }
 
@@ -362,6 +373,57 @@ address {
     background-color: #FFFFFF;
     border: 1px solid #FD9222;
     color: #111111;
+}
+
+.taste-item:nth-child(4n + 1)::before {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    background-image: url(../images/Vector-wihte.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.taste-item:nth-child(4n + 3)::before {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    background-image: url(../images/Vector-wihte.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.taste-item:nth-child(2n)::before {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid #FD9222;
+    border-radius: 50%;
+    background-image: url(../images/Vector-orenge.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
 }
 
 .taste-img {
@@ -514,7 +576,38 @@ address {
     box-shadow: 0px 5px 10px 2px #dedddd;
 }
 
+.top-cover-overflay {
+    position: relative;
+    overflow: hidden;
+}
+
 .top-img {}
+
+.top-overflay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transform: translateY(100%);
+    transition: transform 1050ms ease-in-out;
+}
+
+.top-item:hover .top-overflay {
+    transform: translate(0);
+}
+
+.top-over-text {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: #dedddd;
+    text-align: start;
+    margin: 0;
+    padding: 178px 40px;
+}
 
 .top-subtitle {
     padding: 28px 64px;
@@ -598,6 +691,7 @@ address {
     display: block;
     margin: 0 auto;
     background-color: transparent;
+    transition: color 500ms ease, background-color 500ms ease;
 }
 
 .loved-btn:hover,
@@ -653,6 +747,11 @@ address {
 
 .footer-icon-soc {
     fill: #FFFFFF;
+    transition: fill 300ms ease;
+}
+
+.footer-icon-soc:hover {
+    fill: #FD9222;
 }
 
 .footer-addres-div {}
@@ -678,7 +777,11 @@ address {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
+    transition: color 300ms ease;
+}
 
+.foter-addres-link:hover {
+    color: #FD9222;
 }
 
 .footer-nav {}
@@ -695,4 +798,9 @@ address {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
+    transition: color 300ms ease;
+}
+
+.footer-nav-linl:hover {
+    color: #FD9222;
 }
